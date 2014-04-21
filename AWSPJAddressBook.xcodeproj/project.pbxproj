@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25AF0BFE18F71759000D08DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0BFD18F71759000D08DB /* Foundation.framework */; };
+		25AF0C0018F71759000D08DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0BFF18F71759000D08DB /* CoreGraphics.framework */; };
+		25AF0C0218F71759000D08DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C0118F71759000D08DB /* UIKit.framework */; };
+		25AF0C0818F71759000D08DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C0618F71759000D08DB /* InfoPlist.strings */; };
+		25AF0C0A18F71759000D08DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AF0C0918F71759000D08DB /* main.m */; };
+		25AF0C0E18F71759000D08DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AF0C0D18F71759000D08DB /* AppDelegate.m */; };
+		25AF0C1018F71759000D08DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C0F18F71759000D08DB /* Images.xcassets */; };
+		25AF0C1718F71759000D08DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C1618F71759000D08DB /* XCTest.framework */; };
+		25AF0C1818F71759000D08DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0BFD18F71759000D08DB /* Foundation.framework */; };
+		25AF0C1918F71759000D08DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C0118F71759000D08DB /* UIKit.framework */; };
+		25AF0C2118F71759000D08DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C1F18F71759000D08DB /* InfoPlist.strings */; };
+		25AF0C2318F71759000D08DB /* AWSPJAddressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AF0C2218F71759000D08DB /* AWSPJAddressBookTests.m */; };
+		25AF0C2D18F7178F000D08DB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C2C18F7178F000D08DB /* Social.framework */; };
+		25AF0C2F18F71798000D08DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C2E18F71798000D08DB /* Security.framework */; };
+		25AF0C3118F717B9000D08DB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C3018F717B9000D08DB /* AdSupport.framework */; };
+		25AF0C3318F717C3000D08DB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C3218F717C3000D08DB /* Accounts.framework */; };
+		25AF0C3518F7192A000D08DB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C3418F7192A000D08DB /* FacebookSDK.framework */; };
+		25AF0C3718F7193B000D08DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C3618F7193B000D08DB /* CoreLocation.framework */; };
+		25AF0C3918F71974000D08DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C3818F71974000D08DB /* MapKit.framework */; };
+		25AF0C3B18F71989000D08DB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C3A18F71989000D08DB /* ImageIO.framework */; };
+		25AF0C3D18F71998000D08DB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C3C18F71998000D08DB /* MobileCoreServices.framework */; };
+		25AF0C3F18F719B8000D08DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF0C3E18F719B8000D08DB /* QuartzCore.framework */; };
+		25AF0C4518F726DE000D08DB /* AddressListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AF0C4418F726DE000D08DB /* AddressListViewController.m */; };
+		25AF0C5D18F7B5A0000D08DB /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C4718F7B5A0000D08DB /* add.png */; };
+		25AF0C5E18F7B5A0000D08DB /* backgroung@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C4818F7B5A0000D08DB /* backgroung@2x.png */; };
+		25AF0C5F18F7B5A0000D08DB /* base.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C4918F7B5A0000D08DB /* base.png */; };
+		25AF0C6018F7B5A0000D08DB /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C4A18F7B5A0000D08DB /* cancel.png */; };
+		25AF0C6118F7B5A0000D08DB /* done.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C4B18F7B5A0000D08DB /* done.png */; };
+		25AF0C6218F7B5A0000D08DB /* ALTGOT2N.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C4D18F7B5A0000D08DB /* ALTGOT2N.ttf */; };
+		25AF0C6318F7B5A0000D08DB /* APJapanesefont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C4E18F7B5A0000D08DB /* APJapanesefont.ttf */; };
+		25AF0C6418F7B5A0000D08DB /* Bigmouth-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C4F18F7B5A0000D08DB /* Bigmouth-Bold.ttf */; };
+		25AF0C6518F7B5A0000D08DB /* Lato-Bol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5018F7B5A0000D08DB /* Lato-Bol.ttf */; };
+		25AF0C6618F7B5A0000D08DB /* Lato-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5118F7B5A0000D08DB /* Lato-Reg.ttf */; };
+		25AF0C6718F7B5A0000D08DB /* MyriadPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5218F7B5A0000D08DB /* MyriadPro-Bold.otf */; };
+		25AF0C6818F7B5A0000D08DB /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5318F7B5A0000D08DB /* MyriadPro-Regular.otf */; };
+		25AF0C6918F7B5A0000D08DB /* SOUPER3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5418F7B5A0000D08DB /* SOUPER3.ttf */; };
+		25AF0C6A18F7B5A0000D08DB /* subtlesansultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5518F7B5A0000D08DB /* subtlesansultralight.ttf */; };
+		25AF0C6B18F7B5A0000D08DB /* UniversLT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5618F7B5A0000D08DB /* UniversLT.ttf */; };
+		25AF0C6C18F7B5A0000D08DB /* URWGroteskTLigCon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5718F7B5A0000D08DB /* URWGroteskTLigCon.ttf */; };
+		25AF0C6D18F7B5A0000D08DB /* header_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5818F7B5A0000D08DB /* header_bg@2x.png */; };
+		25AF0C6E18F7B5A0000D08DB /* photo_album.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5918F7B5A0000D08DB /* photo_album.png */; };
+		25AF0C6F18F7B5A0000D08DB /* photo_album.psd in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5A18F7B5A0000D08DB /* photo_album.psd */; };
+		25AF0C7018F7B5A0000D08DB /* tabbar_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5B18F7B5A0000D08DB /* tabbar_camera.png */; };
+		25AF0C7118F7B5A0000D08DB /* tabbar_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AF0C5C18F7B5A0000D08DB /* tabbar_pin.png */; };
+		25AF0C7418F7B6AC000D08DB /* AddressInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AF0C7318F7B6AC000D08DB /* AddressInputViewController.m */; };
+		25AF0C7718F7C196000D08DB /* FormatterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AF0C7618F7C196000D08DB /* FormatterUtil.m */; };
+		25AF0C8218F87586000D08DB /* AddressDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AF0C8118F87586000D08DB /* AddressDetailViewController.m */; };
+		25AF0C8518F876F2000D08DB /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AF0C8418F876F2000D08DB /* Annotation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25AF0C1A18F71759000D08DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25AF0BF218F71759000D08DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25AF0BF918F71759000D08DB;
+			remoteInfo = AWSPJAddressBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25AF0BFA18F71759000D08DB /* AWSPJAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSPJAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25AF0BFD18F71759000D08DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		25AF0BFF18F71759000D08DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25AF0C0118F71759000D08DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		25AF0C0518F71759000D08DB /* AWSPJAddressBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AWSPJAddressBook-Info.plist"; sourceTree = "<group>"; };
+		25AF0C0718F71759000D08DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25AF0C0918F71759000D08DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25AF0C0B18F71759000D08DB /* AWSPJAddressBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWSPJAddressBook-Prefix.pch"; sourceTree = "<group>"; };
+		25AF0C0C18F71759000D08DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		25AF0C0D18F71759000D08DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		25AF0C0F18F71759000D08DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		25AF0C1518F71759000D08DB /* AWSPJAddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AWSPJAddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25AF0C1618F71759000D08DB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		25AF0C1E18F71759000D08DB /* AWSPJAddressBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AWSPJAddressBookTests-Info.plist"; sourceTree = "<group>"; };
+		25AF0C2018F71759000D08DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25AF0C2218F71759000D08DB /* AWSPJAddressBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSPJAddressBookTests.m; sourceTree = "<group>"; };
+		25AF0C2C18F7178F000D08DB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		25AF0C2E18F71798000D08DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		25AF0C3018F717B9000D08DB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		25AF0C3218F717C3000D08DB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		25AF0C3418F7192A000D08DB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		25AF0C3618F7193B000D08DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		25AF0C3818F71974000D08DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		25AF0C3A18F71989000D08DB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		25AF0C3C18F71998000D08DB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		25AF0C3E18F719B8000D08DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		25AF0C4318F726DE000D08DB /* AddressListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListViewController.h; sourceTree = "<group>"; };
+		25AF0C4418F726DE000D08DB /* AddressListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressListViewController.m; sourceTree = "<group>"; };
+		25AF0C4718F7B5A0000D08DB /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		25AF0C4818F7B5A0000D08DB /* backgroung@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroung@2x.png"; sourceTree = "<group>"; };
+		25AF0C4918F7B5A0000D08DB /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base.png; sourceTree = "<group>"; };
+		25AF0C4A18F7B5A0000D08DB /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		25AF0C4B18F7B5A0000D08DB /* done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = done.png; sourceTree = "<group>"; };
+		25AF0C4D18F7B5A0000D08DB /* ALTGOT2N.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ALTGOT2N.ttf; sourceTree = "<group>"; };
+		25AF0C4E18F7B5A0000D08DB /* APJapanesefont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = APJapanesefont.ttf; sourceTree = "<group>"; };
+		25AF0C4F18F7B5A0000D08DB /* Bigmouth-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bigmouth-Bold.ttf"; sourceTree = "<group>"; };
+		25AF0C5018F7B5A0000D08DB /* Lato-Bol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bol.ttf"; sourceTree = "<group>"; };
+		25AF0C5118F7B5A0000D08DB /* Lato-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Reg.ttf"; sourceTree = "<group>"; };
+		25AF0C5218F7B5A0000D08DB /* MyriadPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.otf"; sourceTree = "<group>"; };
+		25AF0C5318F7B5A0000D08DB /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
+		25AF0C5418F7B5A0000D08DB /* SOUPER3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SOUPER3.ttf; sourceTree = "<group>"; };
+		25AF0C5518F7B5A0000D08DB /* subtlesansultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtlesansultralight.ttf; sourceTree = "<group>"; };
+		25AF0C5618F7B5A0000D08DB /* UniversLT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UniversLT.ttf; sourceTree = "<group>"; };
+		25AF0C5718F7B5A0000D08DB /* URWGroteskTLigCon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = URWGroteskTLigCon.ttf; sourceTree = "<group>"; };
+		25AF0C5818F7B5A0000D08DB /* header_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header_bg@2x.png"; sourceTree = "<group>"; };
+		25AF0C5918F7B5A0000D08DB /* photo_album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_album.png; sourceTree = "<group>"; };
+		25AF0C5A18F7B5A0000D08DB /* photo_album.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = photo_album.psd; sourceTree = "<group>"; };
+		25AF0C5B18F7B5A0000D08DB /* tabbar_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_camera.png; sourceTree = "<group>"; };
+		25AF0C5C18F7B5A0000D08DB /* tabbar_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_pin.png; sourceTree = "<group>"; };
+		25AF0C7218F7B6AC000D08DB /* AddressInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressInputViewController.h; path = ../../AWSPJAddressBook_bk/AWSPJAddressBook/AddressInputViewController.h; sourceTree = "<group>"; };
+		25AF0C7318F7B6AC000D08DB /* AddressInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressInputViewController.m; path = ../../AWSPJAddressBook_bk/AWSPJAddressBook/AddressInputViewController.m; sourceTree = "<group>"; };
+		25AF0C7518F7C196000D08DB /* FormatterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatterUtil.h; sourceTree = "<group>"; };
+		25AF0C7618F7C196000D08DB /* FormatterUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatterUtil.m; sourceTree = "<group>"; };
+		25AF0C8018F87586000D08DB /* AddressDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressDetailViewController.h; path = ../../AWSPJAddressBook_bk/AWSPJAddressBook/AddressDetailViewController.h; sourceTree = "<group>"; };
+		25AF0C8118F87586000D08DB /* AddressDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressDetailViewController.m; path = ../../AWSPJAddressBook_bk/AWSPJAddressBook/AddressDetailViewController.m; sourceTree = "<group>"; };
+		25AF0C8318F876F2000D08DB /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		25AF0C8418F876F2000D08DB /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25AF0BF718F71759000D08DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF0C3F18F719B8000D08DB /* QuartzCore.framework in Frameworks */,
+				25AF0C3D18F71998000D08DB /* MobileCoreServices.framework in Frameworks */,
+				25AF0C3B18F71989000D08DB /* ImageIO.framework in Frameworks */,
+				25AF0C3918F71974000D08DB /* MapKit.framework in Frameworks */,
+				25AF0C3718F7193B000D08DB /* CoreLocation.framework in Frameworks */,
+				25AF0C3318F717C3000D08DB /* Accounts.framework in Frameworks */,
+				25AF0C3118F717B9000D08DB /* AdSupport.framework in Frameworks */,
+				25AF0C2F18F71798000D08DB /* Security.framework in Frameworks */,
+				25AF0C2D18F7178F000D08DB /* Social.framework in Frameworks */,
+				25AF0C0018F71759000D08DB /* CoreGraphics.framework in Frameworks */,
+				25AF0C3518F7192A000D08DB /* FacebookSDK.framework in Frameworks */,
+				25AF0C0218F71759000D08DB /* UIKit.framework in Frameworks */,
+				25AF0BFE18F71759000D08DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25AF0C1218F71759000D08DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF0C1718F71759000D08DB /* XCTest.framework in Frameworks */,
+				25AF0C1918F71759000D08DB /* UIKit.framework in Frameworks */,
+				25AF0C1818F71759000D08DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25AF0BF118F71759000D08DB = {
+			isa = PBXGroup;
+			children = (
+				25AF0C0318F71759000D08DB /* AWSPJAddressBook */,
+				25AF0C1C18F71759000D08DB /* AWSPJAddressBookTests */,
+				25AF0BFC18F71759000D08DB /* Frameworks */,
+				25AF0BFB18F71759000D08DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25AF0BFB18F71759000D08DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25AF0BFA18F71759000D08DB /* AWSPJAddressBook.app */,
+				25AF0C1518F71759000D08DB /* AWSPJAddressBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25AF0BFC18F71759000D08DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25AF0C3E18F719B8000D08DB /* QuartzCore.framework */,
+				25AF0C3C18F71998000D08DB /* MobileCoreServices.framework */,
+				25AF0C3A18F71989000D08DB /* ImageIO.framework */,
+				25AF0C3818F71974000D08DB /* MapKit.framework */,
+				25AF0C3618F7193B000D08DB /* CoreLocation.framework */,
+				25AF0C3418F7192A000D08DB /* FacebookSDK.framework */,
+				25AF0C3218F717C3000D08DB /* Accounts.framework */,
+				25AF0C3018F717B9000D08DB /* AdSupport.framework */,
+				25AF0C2E18F71798000D08DB /* Security.framework */,
+				25AF0C2C18F7178F000D08DB /* Social.framework */,
+				25AF0BFD18F71759000D08DB /* Foundation.framework */,
+				25AF0BFF18F71759000D08DB /* CoreGraphics.framework */,
+				25AF0C0118F71759000D08DB /* UIKit.framework */,
+				25AF0C1618F71759000D08DB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25AF0C0318F71759000D08DB /* AWSPJAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				25AF0C4618F7B5A0000D08DB /* resourse */,
+				25AF0C0C18F71759000D08DB /* AppDelegate.h */,
+				25AF0C0D18F71759000D08DB /* AppDelegate.m */,
+				25AF0C0F18F71759000D08DB /* Images.xcassets */,
+				25AF0C0418F71759000D08DB /* Supporting Files */,
+				25AF0C4318F726DE000D08DB /* AddressListViewController.h */,
+				25AF0C7518F7C196000D08DB /* FormatterUtil.h */,
+				25AF0C7618F7C196000D08DB /* FormatterUtil.m */,
+				25AF0C4418F726DE000D08DB /* AddressListViewController.m */,
+				25AF0C8318F876F2000D08DB /* Annotation.h */,
+				25AF0C8418F876F2000D08DB /* Annotation.m */,
+				25AF0C7218F7B6AC000D08DB /* AddressInputViewController.h */,
+				25AF0C7318F7B6AC000D08DB /* AddressInputViewController.m */,
+				25AF0C8018F87586000D08DB /* AddressDetailViewController.h */,
+				25AF0C8118F87586000D08DB /* AddressDetailViewController.m */,
+			);
+			path = AWSPJAddressBook;
+			sourceTree = "<group>";
+		};
+		25AF0C0418F71759000D08DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25AF0C0518F71759000D08DB /* AWSPJAddressBook-Info.plist */,
+				25AF0C0618F71759000D08DB /* InfoPlist.strings */,
+				25AF0C0918F71759000D08DB /* main.m */,
+				25AF0C0B18F71759000D08DB /* AWSPJAddressBook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25AF0C1C18F71759000D08DB /* AWSPJAddressBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				25AF0C2218F71759000D08DB /* AWSPJAddressBookTests.m */,
+				25AF0C1D18F71759000D08DB /* Supporting Files */,
+			);
+			path = AWSPJAddressBookTests;
+			sourceTree = "<group>";
+		};
+		25AF0C1D18F71759000D08DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25AF0C1E18F71759000D08DB /* AWSPJAddressBookTests-Info.plist */,
+				25AF0C1F18F71759000D08DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25AF0C4618F7B5A0000D08DB /* resourse */ = {
+			isa = PBXGroup;
+			children = (
+				25AF0C4718F7B5A0000D08DB /* add.png */,
+				25AF0C4818F7B5A0000D08DB /* backgroung@2x.png */,
+				25AF0C4918F7B5A0000D08DB /* base.png */,
+				25AF0C4A18F7B5A0000D08DB /* cancel.png */,
+				25AF0C4B18F7B5A0000D08DB /* done.png */,
+				25AF0C4C18F7B5A0000D08DB /* font */,
+				25AF0C5818F7B5A0000D08DB /* header_bg@2x.png */,
+				25AF0C5918F7B5A0000D08DB /* photo_album.png */,
+				25AF0C5A18F7B5A0000D08DB /* photo_album.psd */,
+				25AF0C5B18F7B5A0000D08DB /* tabbar_camera.png */,
+				25AF0C5C18F7B5A0000D08DB /* tabbar_pin.png */,
+			);
+			path = resourse;
+			sourceTree = "<group>";
+		};
+		25AF0C4C18F7B5A0000D08DB /* font */ = {
+			isa = PBXGroup;
+			children = (
+				25AF0C4D18F7B5A0000D08DB /* ALTGOT2N.ttf */,
+				25AF0C4E18F7B5A0000D08DB /* APJapanesefont.ttf */,
+				25AF0C4F18F7B5A0000D08DB /* Bigmouth-Bold.ttf */,
+				25AF0C5018F7B5A0000D08DB /* Lato-Bol.ttf */,
+				25AF0C5118F7B5A0000D08DB /* Lato-Reg.ttf */,
+				25AF0C5218F7B5A0000D08DB /* MyriadPro-Bold.otf */,
+				25AF0C5318F7B5A0000D08DB /* MyriadPro-Regular.otf */,
+				25AF0C5418F7B5A0000D08DB /* SOUPER3.ttf */,
+				25AF0C5518F7B5A0000D08DB /* subtlesansultralight.ttf */,
+				25AF0C5618F7B5A0000D08DB /* UniversLT.ttf */,
+				25AF0C5718F7B5A0000D08DB /* URWGroteskTLigCon.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25AF0BF918F71759000D08DB /* AWSPJAddressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25AF0C2618F71759000D08DB /* Build configuration list for PBXNativeTarget "AWSPJAddressBook" */;
+			buildPhases = (
+				25AF0BF618F71759000D08DB /* Sources */,
+				25AF0BF718F71759000D08DB /* Frameworks */,
+				25AF0BF818F71759000D08DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AWSPJAddressBook;
+			productName = AWSPJAddressBook;
+			productReference = 25AF0BFA18F71759000D08DB /* AWSPJAddressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25AF0C1418F71759000D08DB /* AWSPJAddressBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25AF0C2918F71759000D08DB /* Build configuration list for PBXNativeTarget "AWSPJAddressBookTests" */;
+			buildPhases = (
+				25AF0C1118F71759000D08DB /* Sources */,
+				25AF0C1218F71759000D08DB /* Frameworks */,
+				25AF0C1318F71759000D08DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25AF0C1B18F71759000D08DB /* PBXTargetDependency */,
+			);
+			name = AWSPJAddressBookTests;
+			productName = AWSPJAddressBookTests;
+			productReference = 25AF0C1518F71759000D08DB /* AWSPJAddressBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25AF0BF218F71759000D08DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Tanaka Koichi";
+				TargetAttributes = {
+					25AF0BF918F71759000D08DB = {
+						DevelopmentTeam = 469Q3T2DQS;
+					};
+					25AF0C1418F71759000D08DB = {
+						TestTargetID = 25AF0BF918F71759000D08DB;
+					};
+				};
+			};
+			buildConfigurationList = 25AF0BF518F71759000D08DB /* Build configuration list for PBXProject "AWSPJAddressBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25AF0BF118F71759000D08DB;
+			productRefGroup = 25AF0BFB18F71759000D08DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25AF0BF918F71759000D08DB /* AWSPJAddressBook */,
+				25AF0C1418F71759000D08DB /* AWSPJAddressBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25AF0BF818F71759000D08DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF0C6418F7B5A0000D08DB /* Bigmouth-Bold.ttf in Resources */,
+				25AF0C6318F7B5A0000D08DB /* APJapanesefont.ttf in Resources */,
+				25AF0C6C18F7B5A0000D08DB /* URWGroteskTLigCon.ttf in Resources */,
+				25AF0C6D18F7B5A0000D08DB /* header_bg@2x.png in Resources */,
+				25AF0C5D18F7B5A0000D08DB /* add.png in Resources */,
+				25AF0C5F18F7B5A0000D08DB /* base.png in Resources */,
+				25AF0C6B18F7B5A0000D08DB /* UniversLT.ttf in Resources */,
+				25AF0C5E18F7B5A0000D08DB /* backgroung@2x.png in Resources */,
+				25AF0C6918F7B5A0000D08DB /* SOUPER3.ttf in Resources */,
+				25AF0C6218F7B5A0000D08DB /* ALTGOT2N.ttf in Resources */,
+				25AF0C6118F7B5A0000D08DB /* done.png in Resources */,
+				25AF0C6A18F7B5A0000D08DB /* subtlesansultralight.ttf in Resources */,
+				25AF0C6018F7B5A0000D08DB /* cancel.png in Resources */,
+				25AF0C6518F7B5A0000D08DB /* Lato-Bol.ttf in Resources */,
+				25AF0C7018F7B5A0000D08DB /* tabbar_camera.png in Resources */,
+				25AF0C6718F7B5A0000D08DB /* MyriadPro-Bold.otf in Resources */,
+				25AF0C6818F7B5A0000D08DB /* MyriadPro-Regular.otf in Resources */,
+				25AF0C6E18F7B5A0000D08DB /* photo_album.png in Resources */,
+				25AF0C6F18F7B5A0000D08DB /* photo_album.psd in Resources */,
+				25AF0C0818F71759000D08DB /* InfoPlist.strings in Resources */,
+				25AF0C1018F71759000D08DB /* Images.xcassets in Resources */,
+				25AF0C7118F7B5A0000D08DB /* tabbar_pin.png in Resources */,
+				25AF0C6618F7B5A0000D08DB /* Lato-Reg.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25AF0C1318F71759000D08DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF0C2118F71759000D08DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25AF0BF618F71759000D08DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF0C7718F7C196000D08DB /* FormatterUtil.m in Sources */,
+				25AF0C7418F7B6AC000D08DB /* AddressInputViewController.m in Sources */,
+				25AF0C0E18F71759000D08DB /* AppDelegate.m in Sources */,
+				25AF0C8518F876F2000D08DB /* Annotation.m in Sources */,
+				25AF0C0A18F71759000D08DB /* main.m in Sources */,
+				25AF0C8218F87586000D08DB /* AddressDetailViewController.m in Sources */,
+				25AF0C4518F726DE000D08DB /* AddressListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25AF0C1118F71759000D08DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF0C2318F71759000D08DB /* AWSPJAddressBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25AF0C1B18F71759000D08DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25AF0BF918F71759000D08DB /* AWSPJAddressBook */;
+			targetProxy = 25AF0C1A18F71759000D08DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25AF0C0618F71759000D08DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25AF0C0718F71759000D08DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		25AF0C1F18F71759000D08DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25AF0C2018F71759000D08DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25AF0C2418F71759000D08DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25AF0C2518F71759000D08DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25AF0C2718F71759000D08DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tanakakoichi/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AWSPJAddressBook/AWSPJAddressBook-Prefix.pch";
+				INFOPLIST_FILE = "AWSPJAddressBook/AWSPJAddressBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		25AF0C2818F71759000D08DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tanakakoichi/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AWSPJAddressBook/AWSPJAddressBook-Prefix.pch";
+				INFOPLIST_FILE = "AWSPJAddressBook/AWSPJAddressBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		25AF0C2A18F71759000D08DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AWSPJAddressBook.app/AWSPJAddressBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AWSPJAddressBook/AWSPJAddressBook-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AWSPJAddressBookTests/AWSPJAddressBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		25AF0C2B18F71759000D08DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AWSPJAddressBook.app/AWSPJAddressBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AWSPJAddressBook/AWSPJAddressBook-Prefix.pch";
+				INFOPLIST_FILE = "AWSPJAddressBookTests/AWSPJAddressBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25AF0BF518F71759000D08DB /* Build configuration list for PBXProject "AWSPJAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AF0C2418F71759000D08DB /* Debug */,
+				25AF0C2518F71759000D08DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25AF0C2618F71759000D08DB /* Build configuration list for PBXNativeTarget "AWSPJAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AF0C2718F71759000D08DB /* Debug */,
+				25AF0C2818F71759000D08DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25AF0C2918F71759000D08DB /* Build configuration list for PBXNativeTarget "AWSPJAddressBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AF0C2A18F71759000D08DB /* Debug */,
+				25AF0C2B18F71759000D08DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25AF0BF218F71759000D08DB /* Project object */;
+}
